@@ -17,46 +17,18 @@ packages:
   wpmServer: https://packages.webmethods.io
   wpmRegistry: softwareag
 services:
-- serviceName: project.sirf01.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_1
+- serviceName: project.sirf01.integrations:TestDB1
   packages:
   - name: Sirf01Project
     version: "1.0"
   - name: OnPremiseISPkg
     version: "1.0"
-- serviceName: project.sirf01.integrations:Test1
+- serviceName: project.sirf01.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:Test1
   packages:
   - name: Sirf01Project
     version: "1.0"
   - name: OnPremiseISPkg
     version: "1.0"
-- serviceName: OnPremiseISPkg.loadSvc:loadData
-  packages:
-  - name: OnPremiseISPkg
-    version: "1.0"
-- serviceName: pub.flow:debugLog
-  packages:
-  - name: WmPublic
-    version: 11.1.0.0.2015
-- serviceName: project.sirf01.integrations:Test2
-  packages:
-  - name: Sirf01Project
-    version: "1.0"
-  - name: OnPremiseISPkg
-    version: "1.0"
-- serviceName: pub.math:addInts
-  packages:
-  - name: WmPublic
-    version: 11.1.0.0.2015
-- serviceName: project.sirf01.integrations:Test3
-  packages:
-  - name: Sirf01Project
-    version: "1.0"
-  - name: OnPremiseISPkg
-    version: "1.0"
-- serviceName: pub.math:multiplyInts
-  packages:
-  - name: WmPublic
-    version: 11.1.0.0.2015
 configurationVariables:
   ? artConnection.Sirf01Project.project.sirf01.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.minimumPoolSize
   : "1"
@@ -98,7 +70,7 @@ configurationVariables:
   ? artConnection.Sirf01Project.project.sirf01.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.dbType
   : ORACLE
   ? artConnection.Sirf01Project.project.sirf01.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionEnabled
-  : "false"
+  : "true"
   ? artConnection.Sirf01Project.project.sirf01.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.keyStore
   : ""
   jdbc.jdbcTestPool.driverAlias: MySQL Database Java Connector Driver
