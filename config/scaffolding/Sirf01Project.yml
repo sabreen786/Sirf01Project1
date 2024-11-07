@@ -14,17 +14,13 @@ packages:
   gitUsername: radhikaWarrierSAG
   gitBranch: main
 services:
-- serviceName: project.sirf01.integrations:Test1
+- serviceName: project.sirf01.integrations:Test2
   packages:
   - name: Sirf01Project
     version: "1.0"
   - name: OnPremiseISPkg
     version: "1.0"
-- serviceName: OnPremiseISPkg.loadSvc:loadData
-  packages:
-  - name: OnPremiseISPkg
-    version: "1.0"
-- serviceName: pub.flow:debugLog
+- serviceName: pub.math:addInts
   packages:
   - name: WmPublic
     version: 11.1.0.0.2015
