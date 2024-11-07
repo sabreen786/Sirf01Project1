@@ -14,13 +14,13 @@ packages:
   gitUsername: radhikaWarrierSAG
   gitBranch: main
 services:
-- serviceName: project.sirf01.integrations:Test2
+- serviceName: project.sirf01.integrations:Test3
   packages:
   - name: Sirf01Project
     version: "1.0"
   - name: OnPremiseISPkg
     version: "1.0"
-- serviceName: pub.math:addInts
+- serviceName: pub.math:multiplyInts
   packages:
   - name: WmPublic
     version: 11.1.0.0.2015
